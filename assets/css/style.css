@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parallaxScrolling {
+    background-image: url("https://cdn.discordapp.com/attachments/1058133874900729988/1269419550508716114/haone_il_crypto_coins_bitcoin_etherium_doge_litecoin_pepe_urban_3b767306-228f-4e4f-a613-fb65181d7cf0.png?ex=66affe95&is=66aead15&hm=634e986758229a2fd8aa8cddbd7e57655c3bcbd5f68af3429e91e3a5d9967097&");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Card styling */
+.card-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.coinLogo {
+    width: 20%;
+    height: 20%;
+}
+
+.modal-body ul {
+    padding-left: 0;
+}
+
+.modal-body ul li {
+    list-style-type: none;
+}
